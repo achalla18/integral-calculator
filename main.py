@@ -38,7 +38,7 @@ def print_help():
 def show_examples():
     examples = [
         ("x**2 + 3*x + 1", "Basic polynomial"),
-        ("sin(x)", "Trigonometric function"),
+        ("sin(x)", "Trig function"),
         ("exp(x)", "Exponential function"),
         ("x*exp(x)", "Integration by parts"),
         ("x*sin(x)", "Integration by parts"),
