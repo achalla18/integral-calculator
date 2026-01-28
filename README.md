@@ -15,7 +15,7 @@ pip install sympy
 
 2. Run the calculator:
 ```bash
-python3 integral_calculator.py
+python3 main.py
 ```
 
 ## How to use
