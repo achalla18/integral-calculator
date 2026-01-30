@@ -40,8 +40,8 @@ def show_examples():
         ("x**2 + 3*x + 1", "Basic polynomial"),
         ("sin(x)", "Trig function"),
         ("exp(x)", "Exponential function"),
-        ("x*exp(x)", "Integration by parts"),
-        ("x*sin(x)", "Integration by parts"),
+        ("x*exp(x)", "integration by parts"),
+        ("x*sin(x)", "integration by parts"),
         ("1/(x**2 + 1)", "Inverse trigonometric"),
         ("x*sqrt(x)", "Power rule"),
     ]
@@ -84,7 +84,7 @@ def solve_integral(expression_str):
         
         uses_ibp = check_integration_by_parts(expr, x)
         if uses_ibp:
-            print("→ This integral likely requires INTEGRATION BY PARTS")
+            print("→ This integral might require integration by parts")
             print()
         
         # Compute 
@@ -103,7 +103,7 @@ def solve_integral(expression_str):
         except:
             # basic explanation
             if uses_ibp:
-                print("TECHNIQUE USED: Integration by Parts")
+                print("TECHNIQUE USED: integration by parts")
                 print("Formula: ∫ u dv = uv - ∫ v du")
                 print()
                 
